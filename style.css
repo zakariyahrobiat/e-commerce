@@ -103,7 +103,7 @@ a{
     letter-spacing: 1px;
 }
 .body-container .title{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     padding: 15px 0;
 }
@@ -134,7 +134,7 @@ a{
     padding-top: 5px;
     font-weight: 700;
     color: hsl(219,9%, 45%);
-    padding-left: 100px;
+    padding-left: 80px;
     text-decoration: line-through;
 }
 .item-number-container{
