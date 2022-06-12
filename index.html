@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+            <img src="images/icon-menu.svg" alt="" srcset="" class="image" id="hamburger">
+            <img src="images/logo.svg" alt="" srcset="" class="logo">
+                        <div class="menu-container">
+                <img src="images/icon-close.svg" alt="" srcset="" class="close-btn">
+                <ul>
+                    <li> <a href="">Collections</a> </li>
+                    <li> <a href="">Men</a> </li>
+                    <li> <a href="">Women</a></li>
+                    <li> <a href=""> About</a></li>
+                    <li> <a href="">Contact</a> </li>
+                </ul>
+            </div>
+            </div>
+            <div class="cart-container">
+            <img src="images/icon-cart.svg" alt="" srcset="" class="image" id="cart">
+            <img src="images/image-avatar.png" alt="" srcset=""class="image">
+            </div>
+        </div> <hr class="desktop">
+        <div class="body">
+            <div class="img-container">
+                <img src="images/icon-previous.svg" alt="" srcset="" class="previous-btn">
+                <img src="images/icon-next.svg" alt="" srcset="" class="next-btn">
+                <img src="images/image-product-1.jpg" alt="" srcset="" class="display-img">
+
+
+           
+        </div>
+       
+        <div class="body-container">
+            <p class="company">SNEAKER COMPANY</p>
+            <h1 class="title">Fall Limited Edition Sneakers</h1>
+            <p class="about-sneakers">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+              <div class="price-container-mobile">
+                    <h1 class="discount-price">$125.00</h1>
+                <p class="discount">50%</p>
+                <p class="actual-price">$250.00</p>
+                </div>
+                <div class="price-container-desktop">
+                <h1 class="discount-price">$125.00  <span class="discount">50%</span></h1>
+                <p class="actual-price">$250.00</p>
+                </div>
+                <div class="footer">
+                <div class="item-number-container">
+                    <img src="images/icon-minus.svg" alt="" srcset="" class="minus-btn" onclick="subtract()" >
+                    <p class="item-number">0</p>
+                    <img src="images/icon-plus.svg" alt="" srcset="" class="plus-btn" onclick="plus()">
+                </div>
+                <button class="add-cart-btn"> <img src="images/icon-cart.svg" alt="" srcset="" class="cart"> Add to cart</button>
+        </div>
+        </div>
+        </div>
+        <div class="images-container">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" srcset="" >
+            <img src="images/image-product-2-thumbnail.jpg" alt="" srcset="" >
+            <img src="images/image-product-3-thumbnail.jpg" alt="" srcset="" >
+            <img src="images/image-product-4-thumbnail.jpg" alt="" srcset="" >
+
+        </div>
+        <div class="cart-wrapper">
+            <p class="cart">cart</p>
+            <hr>
+            <div class="cart-content">
+            <div class="cart-item">
+            <img src="images/image-product-1.jpg" alt="" srcset="" class="sneakers-img">
+            <p>Autumn Limited Edition... <br> <span id="price">$125.00 </span> x <span id="number"></span> <span id="total"></span> </p>
+            <img src="images/icon-delete.svg" alt="" srcset="" class="delete-img" onclick="deleteBtn()">
+                </div>
+                <button>Checkout</button>
+                </div>
+        </div>
+        <div class="light-box">
+            <img src="images/icon-close.svg" alt="" srcset="" class="close">
+            <div class="large-image">
+                <img src="images/icon-previous.svg" alt="" srcset="" class="previous-btn previous">
+                <img src="images/icon-next.svg" alt="" srcset="" class="next-btn next">
+                <img src="images/image-product-1.jpg" alt="" srcset="" class="show-img">
+            </div>
+            <div class="light-box-images">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" srcset="" class="images image1">
+            <img src="images/image-product-2-thumbnail.jpg" alt="" srcset="" class="images image2">
+            <img src="images/image-product-3-thumbnail.jpg" alt="" srcset="" class="images image3">
+            <img src="images/image-product-4-thumbnail.jpg" alt="" srcset="" class="images image4">
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header .logo-container{
+    width: 60%;
+}
+.header .cart-container{
+    width: 40%;
+    text-align: right; 
+}
+.logo-container .image {
+    width: 12%;
+
+}
+ .cart-container .image{
+     width: 32%;
+     padding-right: 10px;
+ }
+.header .logo{
+    width: 85%;
+    padding-left: 10px;
+}
+.container .img-container img {
+    width: 100%;
+    padding: 0;
+}
+.container .img-container{
+    position: relative;
+   
+}
+.container .img-container .next-btn{
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    right: 12px;
+
+}
+.container .img-container .previous-btn{
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 12px;
+}
+.container .menu-container{
+    display: none;
+}
+.container .menu-container2{
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 70%;
+     height: 1200%;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+.menu-container2 img{
+    padding-bottom: 20px;
+    width: 10%;
+}
+.menu-container2 li{
+    line-height: 2.0;
+    font-size: 1.9em;
+    font-weight: 700;
+    list-style: none;
+    
+}
+.body-container{
+    padding: 20px;
+}
+.body-container .company{
+    color: hsl(26, 100%, 55%);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.body-container .title{
+    font-size: 2em;
+    font-weight: 700;
+    padding: 15px 0;
+}
+.body-container .about-sneakers{
+    font-size: 19px;
+    font-weight: 400;
+    color: hsl(219,9%, 45%);
+}
+.price-container-mobile{
+    display: flex;
+    padding: 20px 0;
+}
+.price-container-mobile .discount-price{
+    font-size: 2em;
+    font-weight: 700;
+}
+.price-container-mobile .discount{
+    color: hsl(26, 100%, 55%);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 2px;
+    margin-left: 20px;
+    background-color: hsl(25, 100%, 94%);
+}
+.price-container-mobile .actual-price{
+    font-size: 1.5em;
+    padding-top: 5px;
+    font-weight: 700;
+    color: hsl(219,9%, 45%);
+    padding-left: 100px;
+    text-decoration: line-through;
+}
+.item-number-container{
+    background: hsl(223,64%,98%);
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+}
+.item-number-container .minus-btn{
+    width: 15px;
+    height: 7px;
+    margin-top: 5px;
+}
+.item-number-container .plus-btn{
+    width: 15px;
+    height: 15px;
+}
+.item-number-container p{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700; 
+}
+button{
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.cart{
+    padding-right: 15px;
+}
+.cart-wrapper{
+      display: none; 
+}
+.cart-wrapper.active{
+    background-color: white;
+     color: black;
+    width: 95%;
+    position: absolute;
+    top: 80px;
+    margin: 10px;
+    height: 35%;
+    border-radius: 10px;
+    /* padding: 20px; */
+    display: block;
+}
+.cart-wrapper.active .cart{
+   padding: 10px 20px;
+    font-size: 2em;
+    font-weight: 700;
+}
+.empty-cart{
+    display: block;
+    text-align: center;
+     padding: 25% 0 ; 
+     font-size: 1.5em;
+}
+.cart-item{
+    display: flex;
+    gap: 12px;
+    padding: 20px ;
+}
+.cart-wrapper.active .sneakers-img{
+    width: 22%;
+    border-radius: 5px;
+}
+.cart-wrapper.active .delete-img{
+    width: 7%;
+    height: 5%;
+    padding-top: 20px;
+}
+.cart-wrapper.active p{
+    font-size: 1.1em;
+    padding-right: 20px;
+    line-height: 1.5;
+}
+.cart-wrapper.active button{
+    margin: 20px;
+    width: 90%;
+}
+.cart-wrapper.active #total{
+    font-weight: 700;
+    font-size: 1.2em;
+
+}
+.cart-item #number, .cart-item #price{
+    font-size: 1.2em;
+}
+.destop{
+    display: none;
+}
+.price-container-desktop{
+    display: none;
+}
+.images-container{
+    display: none;
+}
+.light-box{
+    display: none;
+}
+@media screen and (min-width: 1000px) {
+    .container {
+        position: relative;
+        padding: 20px 150px;
+    }
+    #hamburger{
+        display: none;
+    }
+    .header{
+        padding: 20px 0;
+    }
+    .container .menu-container {
+        display: flex;
+    }
+    .container .menu-container ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .menu-container img{
+        display: none; 
+    }
+    .menu-container li{
+        list-style: none;
+        padding-top: 5px;
+    }
+    .header .logo-container{
+        width: 50%;
+    }
+    .header .cart-container{
+        width: 50%;
+    }
+    .cart-container .image{
+        width: 7%;
+        padding-right: 15px;
+    }
+    .logo-container{
+        display: flex;
+    }
+    .logo-container .logo{
+        width: 35%;
+        /* height: 50%; */
+        padding-right: 45px;
+    }
+    .body{
+        display: flex;
+        gap: 10%;
+        padding:50px 70px;
+    }
+    .body .img-container{
+        width: 40%;
+    }
+    .body .body-container{
+        width: 50%;
+        padding: 30px 0;
+    }
+    .container .img-container img {
+        width: 100%;
+        padding: 0;
+        border-radius: 10px;
+    }
+    .container .img-container{
+        position: relative;
+       
+    }
+    .container .img-container .next-btn{
+       display: none;
+    
+    }
+    .container .img-container .previous-btn{
+        display: none;
+    }
+    .body-container .title{
+        font-size: 3em;
+        font-weight: 700;
+        padding: 20px 0;
+        line-height: 1;
+    }
+    .price-container-desktop{
+        display: block;
+        padding: 20px 0;
+    }
+    .price-container-desktop .discount-price{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .price-container-desktop .discount{
+        color: hsl(26, 100%, 55%);
+        font-size: 15px;
+        font-weight: 500;
+        /* padding: 5px; */
+        height: 20px;
+        border-radius: 2px;
+        margin-left: 20px;
+        background-color: hsl(25, 100%, 94%);
+    }
+    .price-container-desktop .actual-price{
+        font-size: 1em;
+        padding-top: 5px;
+        font-weight: 500;
+        color: hsl(219,9%, 45%);
+        /* padding-left: 100px; */
+        text-decoration: line-through;
+    }
+    .footer{
+        display: flex;
+        gap: 5%;
+    }
+    .footer button{
+        width: 55%;
+    }
+    .footer .item-number-container{
+        width: 40%;
+    }
+    .item-number-container{
+        background: hsl(223,64%,98%);
+        display: flex;
+        padding: 10px 30px;
+        height: 50px;
+        border-radius: 5px;
+        justify-content: space-between;
+    }
+    .item-number-container .minus-btn{
+        width: 15px;
+        height: 7px;
+        margin-top: 5px;
+    }
+    .item-number-container .plus-btn{
+        width: 15px;
+        height: 15px;
+    }
+    .item-number-container p{
+        color: black;
+        font-size: 1.5em;
+        font-weight: 700; 
+    }
+    button{
+        background-color: hsl(26, 100%, 55%);
+        color: white;
+        border: none;
+        width: 100%;
+         margin-top: 0px;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1em;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+    .price-container-mobile{
+        display: none;
+    }
+    .images-container{
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        margin: -85px 70px;
+    }
+    .images-container img{
+        width: 9%;
+        border-radius: 3px;
+        
+    }
+    .cart{
+        padding-right: 15px;
+    }
+    .cart-wrapper{
+          display: none; 
+    }
+    .cart-wrapper.active{
+        background-color: white;
+         color: black;
+        width: 25%;
+        position: absolute;
+        top: 77px;
+        margin: 10px;
+        height: 40%;
+        border-radius: 0px;
+        /* padding: 20px; */
+         display: block; 
+         right: 140px;   
+         box-shadow: 2px 1px 10px rgb(175, 175, 175);
+    }
+    .cart-wrapper.active .cart{
+       padding: 5px 10px;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    
+    .cart-item{
+        display: flex;
+        gap: 12px;
+        padding: 20px 20px 0 20px ;
+    }
+    .cart-wrapper.active .sneakers-img{
+        width: 20%;
+        border-radius: 5px;
+    }
+    .cart-wrapper.active .delete-img{
+        width: 7%;
+        height: 5%;
+        padding-top: 20px;
+    }
+    .cart-wrapper.active p{
+        font-size: 1.0em;
+        padding-right: 20px;
+        line-height: 1.5;
+    }
+    .cart-wrapper.active button{
+        margin:10px 20px;
+        width: 90%;
+    }
+    .cart-wrapper.active #total{
+        font-weight: 700;
+        font-size: 1.2em;
+    
+    }
+    .cart-item #number, .cart-item #price{
+        font-size: 1.2em;
+    }
+    .empty-cart{
+        display: block;
+        text-align: center;
+         padding: 20% 0 ; 
+    }
+    .container .light-box-active{
+        display: block;
+        position: relative;
+     top: -440px; 
+     left: 28%; 
+     z-index: 1;
+    }
+    .close{
+        margin-left: 38%;
+    }
+    .large-image img{
+        width: 40%;
+         height: 420px; 
+        padding: 0;
+        border-radius: 10px;
+    }
+    .light-box-images{
+        display: flex;
+        gap: 10px;
+        margin: 10px 15px;
+        
+        /* margin: -90px 70px; */
+    }
+    .light-box-images img{
+        width: 8.7%;
+        border-radius: 3px;
+        
+    }
+    .light-box-active .previous{
+        position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    top: 40%;
+    left: -12px;  
+    }
+    .light-box-active .next{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        background-color: white;
+        border-radius: 50%;
+        top: 40%;
+        left: 39%;
+    }
+
+    
+   
+}
